@@ -1,4 +1,4 @@
-body {
+.body {
     font-family: 'Roboto', sans-serif; /* Replace with your chosen font */
     overflow-x: hidden;
     max-width: 100%;
@@ -9,12 +9,12 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
-html, body {
+.html, .body {
     margin: 0;
     padding: 0;
 }
 
-body {
+.body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
