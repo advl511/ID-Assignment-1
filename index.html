@@ -3,150 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe Layout</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #444;
-            color: white;
-            padding: 10px 20px;
-        }
-        .header .tabs {
-            display: flex;
-            gap: 20px;
-        }
-        .main {
-            padding: 20px;
-        }
-        .section {
-            margin-bottom: 30px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .section img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .footer {
-            text-align: center;
-            background-color: #222;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        .two-column {
-            display: flex;
-            gap: 10px;
-        }
-        .two-column > div {
-            flex: 1;
-            background-color: #ddd;
-            padding: 10px;
-            border-radius: 8px;
-        }
-        .graphic-container {
-            display: flex;
-            justify-content: space-around;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-        .graphic-container div {
-            flex: 1;
-            height: 100px;
-            background-color: #aaa;
-            border-radius: 8px;
-            text-align: center;
-            line-height: 100px;
-            color: white;
-        }
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
     </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <div class="header">
-        <div class="tabs">
-            <div>Home</div>
-            <div>Tab 1</div>
-            <div>Tab 2</div>
+    <nav class="header">
+        <div class="logo">
+            <a href="index.html"><img src="images/SPCA-Logo.png" alt="logo"></a>
         </div>
-        <div>Logo</div>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main">
-        <!-- Section 1 -->
-        <div class="section">
-            <h2>Title</h2>
-            <p>Body text</p>
-            <img src="https://via.placeholder.com/600x300" alt="Background Image">
-            <div class="two-column">
-                <div>Text 1</div>
-                <div>Text 2</div>
-            </div>
-        </div>
-
-        <!-- Section 2 -->
-        <div class="section">
-            <h2>Title</h2>
-            <img src="https://via.placeholder.com/600x300" alt="Background Image">
-            <div class="graphic-container">
-                <div>Graphic 1</div>
-                <div>Graphic 2</div>
-                <div>Graphic 3</div>
-            </div>
-            <p>Text</p>
-            <div class="two-column">
-                <div>Title</div>
-                <div>Text</div>
-            </div>
-        </div>
-
-        <!-- Section 3 -->
-        <div class="section">
-            <div class="two-column">
-                <div>
-                    <h2>Company Name</h2>
-                    <p>Company mission statement</p>
-                </div>
-                <div>Company Logo</div>
-            </div>
-            <div class="two-column">
-                <div>Company recruitment</div>
-                <div>
-                    Links for socials and job recruitment email
-                </div>
-            </div>
-        </div>
-
-        <!-- Section 4 -->
-        <div class="section">
-            <h2>Title</h2>
-            <p>About company</p>
-            <img src="https://via.placeholder.com/600x300" alt="Background Image">
-            <div class="two-column">
-                <div>Company history and facts</div>
-                <div>
-                    <img src="https://via.placeholder.com/150" alt="Image">
-                </div>
-            </div>
+        <ul class="droplinks">
+            <li class="dropdown">
+                <a href="#">About us▼</a>
+                <ul class="dropdown-menu">
+                   <li><a href="pages/OurTeam.html">Our Team</a></li>
+                   <li><a href="pages/History.html">Our History</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Our Mission▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="pages/Animal.html">Animal Rescue</a></li>
+                    <li><a href="pages/Community.html">Community Outreach</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Help us▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="pages/Adopt.html">Adopt</a></li>
+                    <li><a href="pages/Report.html">Report Cruelty</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="background">
+        <a href="#"><img src="images/cat.jpg" alt="cat"></a>
+        <div class="overlay-text">
+            <h1>Protecting Animals, Saving Lives</h1>
+            <p>Join the SPCA family.</p>
+            <a href="/pages/Adopt.html" class="adopt-button">Adopt Now</a>
         </div>
     </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        Website details
-    </div>
-
+    <section class="title">
+        <h1>Featured Events</h1>
+    </section>
+    <section class="content">
+        <div class="event-carousel">
+            <button class="arrow left-arrow">❮</button>
+            
+            <div class="event-slide active">
+                <h1>Feline Friday</h1>
+                <img src="images/felinefriday.jpg" alt="catfri">
+                <p>Bring your cat along to enjoy some gourmet catnip.</p>
+            </div>
+    
+            <div class="event-slide">
+                <h1>Tiong Bahru Animal Awareness Drive</h1>
+                <img src="images/event2.jpg" alt="Animal Awareness Drive">
+                <p>Come on down to our center at Tiong Bahru to learn about animal welfare.</p>
+            </div>
+    
+            <div class="event-slide">
+                <h1>Marina Bay Fundraiser Party</h1>
+                <img src="images/event3.jpg" alt="Fundraiser Gala">
+                <p>Support our cause by attending this year's fundraiser at Marina Bay Sands.</p>
+            </div>
+            
+            <button class="arrow right-arrow">❯</button>
+        </div>
+    </section>
+    <section class="websiteinfo">
+        <div class="socials">
+            <h1>Our socials</h1>
+            <li class="info">
+            <h2><a href="https://www.instagram.com/spcasingapore/">Instagram</a></h2>
+            <h2><a href="https://www.facebook.com/spcasingapore">Facebook</a></h2>
+            <h2><a href="https://www.tiktok.com/@spcasingapore">Tiktok</a></h2>
+            </li>
+        </div>
+        <div class="Contacts">
+            <h1>Our contacts</h1> 
+            <li class="info">
+            <h2>+65 6287 5355</h2>
+            <h2>enquiries@spca.org.sg</h2>
+            </li>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
